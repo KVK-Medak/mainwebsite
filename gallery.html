@@ -34,7 +34,107 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+  
+  <!-- Gallery style code-->
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
 
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+  
+   <!-- End of Gallery style code-->
 <body>
 
   <!-- ======= Top Bar ======= -->
@@ -103,61 +203,101 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <center>  <h2 style="color:green;"> INDIAN COUNCIL OF AGRICULTURE RESEARCH </h2> </center>
-      <br>
-      <h3>Welcome <br> <span>Dr. Ramanaidu Ekalavya Foundation <br><h1 style="color:blue;">KRISHI VIGYAN KENDRA</h1></spa> </h3>
-      <br>  <h2 style="color:green;"> First KVK in India practicing Organic Farming in entire KVK farm </h2> 
-      <div class="d-flex">
-        <!--
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
-        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i></a>
-        -->
-      </div>
+  <-- gallery code body content-->
+    
+ <h2 style="text-align:center">Slideshow Gallery</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="img_woods_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="img_5terre_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="img_mountains_wide.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="img_lights_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="img_nature_wide.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="img_snow_wide.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">?</a>
+  <a class="next" onclick="plusSlides(1)">?</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
     </div>
-  </section><!-- End Hero -->
+    <div class="column">
+      <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
 
-  <br>
-  <marquee> 
-        <h3><b> <u>
-          <a href="horti.html">
-            OUR UNIQUE PILOTS OF NATIONAL IMPORTANCE DEVELOPED UNDER THE GUIDANCE OF HOST ORGANIZATION EKALAVYA FOUNDATION, HYDERABAD 
-          </a>
-          </u></b></h3>
-  </marquee>
-  
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about section-bg">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-            <h2>About us</h2>
-        </div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
 
-        <div class="row">
-            <div class="col-lg-8" text-align: center data-aos="zoom-out" data-aos-delay="100"> 
-              <img src="assets/img/PD.jpg" class="img-fluid" alt="">
-            </div>
-            <br>
-           <div class="col-lg-12 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <h3>
-              <p align="justify">
-                Krishi Vigyan Kendras are farm technology transfer centres of Indian Council of Agricultural Research (ICAR) mostly operate through
-                State Agricultural Universities (SAUs) and NGOs. Dr Ramanaidu Ekalavya Foundation Krishi Vigyan Kendra (Ekalavya KVK) was started during May, 2017 at Tuniki village of 
-                 Kowdipally mandal in Medak district of Telangana State which falls under ‘Agriculture Technology Application Research Institute’ (ATARI) Zone-X, Hyderabad. The Ekalavya
-               KVK became fully operational in May, 2018 with 8 scientists specializing in plant pathology, agronomy, soil science & agricultural chemistry, agricultural entomology,
-               horticulture, agricultural engineering & farm machinery, veterinary science & animal husbandry and home science. The vision of Ekalavya KVK is to make farming 
-                self-resilient and self-sustainable with the mission to reduce dependency of farmers on external inputs. Ekalavya KVK emphasizes and adopts non-chemical methods of 
-               soil fertility and pest management. 
-              </p>
-             </h3>
-           </div>
-        </div>
-      </div>
-    </section><!-- End About Section -->
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-   
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+  <-- end of gallery code body content-->  
    
    <!-- ======= Footer ======= -->
   <footer id="footer">
